@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Review Website</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+<body>
+  <div class="navbar">
+    <a class="active" href="/">Form</a>
+    <a href="/reviews">Reviews</a>
+    <a href="/pokemon">Pokemon</a>
+  </div>
+
+  <div class="form-style-10">
+    <h1>Enter a Review!<span>Enter name and bio, and give us a video game review!</span></h1>
+    <form method="post" action="/submitReview">
+        <div class="section"><span>1</span>Reviewer Information</div>
+        <div class="inner-wrap">
+            <label>Full Name <input type="text" name="name" required/></label>
+            <label>Bio <textarea class="t1" name="bio"></textarea></label>
+        </div>
+    
+        <div class="section"><span>2</span>Video Game Information</div>
+        <div class="inner-wrap">
+            <label>Video Game Name: <input type="text" name="game" required/></label>
+            <label for="console">Choose a console:</label>
+            <select name="console" id="console" required>
+              <option value="" disabled selected>Select a console</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+              <option value="Xbox Series X">Xbox Series X</option>
+              <option value="Play Station 5">Play Station 5</option>
+              <option value="PC">PC</option>
+            </select>
+        </div>
+    
+        <div class="section"><span>3</span>Rating/Review</div>
+            <div class="inner-wrap">
+            <label>Rating <input type="number" name="rating" min="1" max="10" step="0.5" required/></label>
+            <label>Review <textarea class="t2" name="review" required></textarea></label>
+        </div>
+        <div class="button-section">
+         <input type="submit" name="submit" />
+        </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

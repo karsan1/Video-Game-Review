@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Review Website</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+<body>
+  <div class="navbar">
+    <a href="/">Form</a>
+    <a href="/reviews">Reviews</a>
+    <a class="active" href="/pokemon">Pokemon</a>
+  </div>
+  <div class="form-style-10">
+    <h1>Pokemon Type Getter<span>Enter a Pokemon name, and get its type(s)!</span></h1>
+    <form method="post" action="/getPokemon">
+        <div class="section"><span>1</span>Pokemon name</div>
+        <div class="inner-wrap">
+            <label>Name<input type="text" name="name" /></label>
+        </div>
+        <div class="button-section">
+          <input type="submit" name="submit" />
+        </div>
+    </form>
+  </div>
+</body>
